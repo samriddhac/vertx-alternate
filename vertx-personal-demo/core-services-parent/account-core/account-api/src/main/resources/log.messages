@@ -1,0 +1,7 @@
+account-service.log.message.key.1 = Received request for getAccounts
+account-service.log.message.key.2 = Data retrieved
+account-service.log.message.key.3 = Failed to fetch record
+account-service.log.message.key.4 = Received request for getAccount
+account-service.log.message.key.5 = Received request for convertCurrency
+account-service.log.message.key.6 = Received request for getAuthors
+account-service.log.message.key.7 = Received request for sendPayload

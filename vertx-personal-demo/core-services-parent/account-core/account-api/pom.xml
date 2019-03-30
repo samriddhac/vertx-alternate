@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>demo.cosmos</groupId>
+		<artifactId>account-core</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>account-api</artifactId>
+	<packaging>war</packaging>
+
+	<dependencies>
+		<!-- Jersey Dependencies -->
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-server</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.inject</groupId>
+			<artifactId>jersey-hk2</artifactId>
+		</dependency>
+		<!-- Verts Dependencies -->
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-service-proxy</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-codegen</artifactId>
+		</dependency>
+		<!-- Logging Dependencies -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+		</dependency>
+		<!-- Cosmos libraries Dependencies -->
+		<dependency>
+			<groupId>demo.cosmos</groupId>
+			<artifactId>account-dao-verticle</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>demo.cosmos</groupId>
+			<artifactId>account-model</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>demo.cosmos</groupId>
+			<artifactId>support-registration-service</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!-- swagger libraries Dependencies -->
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-annotations</artifactId>
+		</dependency>
+		<!-- Joda time dependencies -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		</dependency>
+		<!-- Javax dependencies -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.2</version>
+				<configuration>
+					<packagingIncludes>WEB-INF/classes/**,WEB-INF/web.xml,WEB-INF/lib/account-dao-verticle-1.0.0.jar,WEB-INF/lib/account-model-1.0.0.jar,WEB-INF/lib/account-common-1.0.0.jar,WEB-INF/lib/account-soap-messaging-service-1.0.0.jar,WEB-INF/lib/account-rest-messaging-service-1.0.0.jar,WEB-INF/lib/account-jms-messaging-service-1.0.0.jar,WEB-INF/lib/account-guice-jms-1.0.0.jar,WEB-INF/lib/support-registration-service-1.0.0.jar</packagingIncludes>
+				</configuration>
+			</plugin>
+		</plugins>
+		<finalName>account-service</finalName>
+	</build>
+</project>

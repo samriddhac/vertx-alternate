@@ -1,0 +1,41 @@
+= Cheatsheets
+
+[[AccountEntity]]
+== AccountEntity
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[allowScheduledTransactions]]`@allowScheduledTransactions`|`String`|-
+|[[customer]]`@customer`|`link:dataobjects.html#CustomerEntity[CustomerEntity]`|-
+|[[id]]`@id`|`Number (Integer)`|-
+|[[number]]`@number`|`String`|-
+|[[type]]`@type`|`link:dataobjects.html#AccountTypeEntity[AccountTypeEntity]`|-
+|===
+
+[[AccountTypeEntity]]
+== AccountTypeEntity
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[description]]`@description`|`String`|-
+|[[id]]`@id`|`Number (Integer)`|-
+|===
+
+[[CustomerEntity]]
+== CustomerEntity
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`Number (Integer)`|-
+|[[name]]`@name`|`String`|-
+|===
+
