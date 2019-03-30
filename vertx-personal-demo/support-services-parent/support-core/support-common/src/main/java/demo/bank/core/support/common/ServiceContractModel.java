@@ -1,6 +1,7 @@
 package demo.bank.core.support.common;
 
 import java.util.Map;
+import java.util.UUID;
 
 public class ServiceContractModel {
 

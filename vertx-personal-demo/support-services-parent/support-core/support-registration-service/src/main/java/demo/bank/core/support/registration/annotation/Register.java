@@ -10,6 +10,6 @@ import java.lang.annotation.Target;
 @Target(TYPE)
 public @interface Register {
 	public String id() default "";
-	public String name();
+	public String name() default "";
 	public String propertySource() default "application.properties";
 }

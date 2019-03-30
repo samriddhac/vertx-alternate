@@ -18,7 +18,7 @@ import io.vertx.core.Vertx;
  * packages to be scanned for rest resources.
  * Also build a bridge between jax-rs and vert.x verticles.
  */
-@Register(name="account-service", id="account-service")
+@Register(name="account-service")
 @ApplicationPath("/1.0")
 public class RestResourceConfiguration extends ResourceConfig {
 
