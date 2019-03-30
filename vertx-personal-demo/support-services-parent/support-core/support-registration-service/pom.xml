@@ -46,11 +46,15 @@
 			<groupId>org.glassfish.jersey.inject</groupId>
 			<artifactId>jersey-hk2</artifactId>
 		</dependency>
-		<!-- Reflection dependency -->
+		<!-- Consul -->
 		<dependency>
-			<groupId>org.reflections</groupId>
-			<artifactId>reflections</artifactId>
-			<version>0.9.11</version>
+			<groupId>com.orbitz.consul</groupId>
+			<artifactId>consul-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>demo.cosmos</groupId>
+			<artifactId>support-common</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 </project>

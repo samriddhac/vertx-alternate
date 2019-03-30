@@ -99,7 +99,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.2.2</version>
 				<configuration>
-					<packagingIncludes>WEB-INF/classes/**,WEB-INF/web.xml,WEB-INF/lib/account-dao-verticle-1.0.0.jar,WEB-INF/lib/account-model-1.0.0.jar,WEB-INF/lib/account-common-1.0.0.jar,WEB-INF/lib/account-soap-messaging-service-1.0.0.jar,WEB-INF/lib/account-rest-messaging-service-1.0.0.jar,WEB-INF/lib/account-jms-messaging-service-1.0.0.jar,WEB-INF/lib/account-guice-jms-1.0.0.jar,WEB-INF/lib/support-registration-service-1.0.0.jar</packagingIncludes>
+					<packagingIncludes>WEB-INF/classes/**,WEB-INF/web.xml,WEB-INF/lib/account-dao-verticle-1.0.0.jar,WEB-INF/lib/account-model-1.0.0.jar,WEB-INF/lib/account-common-1.0.0.jar,WEB-INF/lib/account-soap-messaging-service-1.0.0.jar,WEB-INF/lib/account-rest-messaging-service-1.0.0.jar,WEB-INF/lib/account-jms-messaging-service-1.0.0.jar,WEB-INF/lib/account-guice-jms-1.0.0.jar,WEB-INF/lib/support-registration-service-1.0.0.jar,WEB-INF/lib/support-common-1.0.0.jar</packagingIncludes>
 				</configuration>
 			</plugin>
 		</plugins>

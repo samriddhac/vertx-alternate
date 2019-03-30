@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 @Retention(RUNTIME)
 @Target(TYPE)
 public @interface Register {
-	public String id();
+	public String id() default "";
 	public String name();
 	public String propertySource() default "application.properties";
 }
